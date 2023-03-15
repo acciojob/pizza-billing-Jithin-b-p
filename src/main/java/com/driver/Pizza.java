@@ -62,8 +62,8 @@ public class Pizza {
         if(paperBagAdded){
             return;
         }
-        this.price += 20;
-        this.bill += "Paperbag Added: " + 20 + "\n";
+        this.price += 40;
+        this.bill += "Paperbag Added: " + 40 + "\n";
         paperBagAdded = true;
     }
 

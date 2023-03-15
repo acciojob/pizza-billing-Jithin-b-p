@@ -9,9 +9,9 @@ public class Pizza {
     private boolean extraCheeseAdded;
     private boolean extraToppingAdded;
 
-    private String cheese;
-    private String topping;
-    private String paperbag;
+    private String cheese = "";
+    private String topping = "";
+    private String paperbag = "";
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;

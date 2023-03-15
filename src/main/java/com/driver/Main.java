@@ -6,8 +6,8 @@ public class Main {
     System.out.println(dp.getPrice());
     dp.addExtraCheese();
     dp.addExtraCheese();
-    dp.addTakeaway();
-    dp.addTakeaway();
+//    dp.addTakeaway();
+//    dp.addTakeaway();
     dp.addExtraToppings();
     System.out.println(dp.getBill());
 

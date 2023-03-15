@@ -6,8 +6,8 @@ public class Pizza {
     private Boolean isVeg;
     private String bill;
     private boolean paperBagAdded;
-    private boolean extraCheeseAdded;
-    private boolean extraToppingAdded;
+    boolean extraCheeseAdded;
+    boolean extraToppingAdded;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;

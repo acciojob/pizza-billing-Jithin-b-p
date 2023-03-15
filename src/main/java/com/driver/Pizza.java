@@ -19,6 +19,16 @@ public class Pizza {
         this.extraCheeseAdded = false;
         this.extraToppingAdded = false;
         // your code goes here
+        if(this.isVeg){
+            this.price += 300;
+            this.bill = "Base Price Of The Pizza:"+ 300 + "\n";
+        }else{
+            this.price += 400;
+            this.bill = "Base Price Of The Pizza:"+ 400 + "\n";
+        }
+
+
+
     }
 
     public int getPrice(){
@@ -31,7 +41,7 @@ public class Pizza {
             return;
         }
         this.price += 80;
-        this.cheese = "Extra Cheese Added: " + 80 + "\n";
+        this.cheese = "Extra Cheese Added:" + 80 + "\n";
         extraCheeseAdded = true;
     }
 
@@ -42,10 +52,10 @@ public class Pizza {
         }
         if(this.isVeg){
             this.price += 70;
-            this.topping = "Extra Toppings Added: " + 70 + "\n";
+            this.topping = "Extra Toppings Added:" + 70 + "\n";
         }else{
             this.price += 120;
-            this.topping = "Extra Toppings Added: " + 120 + "\n";
+            this.topping = "Extra Toppings Added:" + 120 + "\n";
         }
         extraToppingAdded = true;
 
@@ -57,21 +67,14 @@ public class Pizza {
             return;
         }
         this.price += 20;
-        this.paperbag = "Paperbag Added: " + 20 + "\n";
+        this.paperbag = "Paperbag Added:" + 20 + "\n";
         paperBagAdded = true;
     }
 
     public String getBill(){
         // your code goes here
-        if(this.isVeg){
-
-            this.bill += "Base Price Of The Pizza: "+ 300 +"\n";
-
-        }else{
-            this.bill += "Base Price Of The Pizza: "+ 400 + "\n";
-        }
         this.bill += this.cheese + this.topping + this.paperbag;
-        this.bill += "Total Price: " + this.price + "\n";
+        this.bill += "Total Price:" + this.price + "\n";
 
         return this.bill;
 

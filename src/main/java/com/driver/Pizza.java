@@ -6,8 +6,8 @@ public class Pizza {
     private Boolean isVeg;
     private String bill;
     private boolean paperBagAdded;
-    boolean extraCheeseAdded;
-    boolean extraToppingAdded;
+    private boolean extraCheeseAdded;
+    private boolean extraToppingAdded;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -16,10 +16,10 @@ public class Pizza {
         this.extraToppingAdded = false;
         // your code goes here
         if(this.isVeg){
-            this.price = 300;
+            this.price += 300;
             this.bill = "Base Price Of The Pizza: "+ 300 + "\n";
         }else{
-            this.price = 400;
+            this.price += 400;
             this.bill = "Base Price Of The Pizza: "+ 400 + "\n";
         }
 

@@ -17,10 +17,10 @@ public class Pizza {
         // your code goes here
         if(this.isVeg){
             this.price = 300;
-            this.bill = "Base Price Of The Pizza:"+ 300 + "\n";
+            this.bill = "Base Price Of The Pizza: "+ 300 + "\n";
         }else{
             this.price = 400;
-            this.bill = "Base Price Of The Pizza:"+ 400 + "\n";
+            this.bill = "Base Price Of The Pizza: "+ 400 + "\n";
         }
 
 
@@ -37,7 +37,7 @@ public class Pizza {
             return;
         }
         this.price += 80;
-        this.bill += "Extra Cheese Added:" + 80 + "\n";
+        this.bill += "Extra Cheese Added: " + 80 + "\n";
         extraCheeseAdded = true;
     }
 
@@ -48,10 +48,10 @@ public class Pizza {
         }
         if(this.isVeg){
             this.price += 70;
-            this.bill += "Extra Toppings Added:" + 70 + "\n";
+            this.bill += "Extra Toppings Added: " + 70 + "\n";
         }else{
             this.price += 120;
-            this.bill += "Extra Toppings Added:" + 120 + "\n";
+            this.bill += "Extra Toppings Added: " + 120 + "\n";
         }
         extraToppingAdded = true;
 
@@ -63,13 +63,13 @@ public class Pizza {
             return;
         }
         this.price += 20;
-        this.bill += "Paperbag Added:" + 20 + "\n";
+        this.bill += "Paperbag Added: " + 20 + "\n";
         paperBagAdded = true;
     }
 
     public String getBill(){
         // your code goes here
-        this.bill += "Total Price:" + this.price + "\n";
+        this.bill += "Total Price: " + this.price + "\n";
         return this.bill;
 
     }
